@@ -1,0 +1,402 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+.app {
+  /* background-image: url("./Assets/001.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* if you want a fixed background */
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.753) 0%, rgba(9, 9, 121, 0.808) 35%, rgba(0, 213, 255, 0.76) 100%), url("./Assets/Images/Other/002.jpg");
+  text-align: center;
+  padding: 0 8rem;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+.app-header {
+  /* height: 100vh; */
+  height: 58rem;
+  width: '100%';
+  /* background: linear-gradient(90deg, rgba(1, 0, 36, 0.932) 0%, rgba(32, 0, 0, 0.877) 100%),url("./Assets/004.jpg"); */
+  background: linear-gradient(90deg, rgba(1, 0, 36, 0.932) 0%, rgba(32, 0, 0, 0.877) 100%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.app-header h1 {
+  font-size: 4rem;
+  font-weight: 10;
+  margin-top: 2rem;
+}
+
+.app-tech-stack-1, .app-tech-stack-2, .app-tech-stack-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000077;
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 4rem;
+}
+.app-tech-stack-1 img, .app-tech-stack-2 img, .app-tech-stack-3 img {
+  width: 80px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-tech-stack-1 .react, .app-tech-stack-2 .react, .app-tech-stack-3 .react {
+  width: 40px;
+}
+
+.app-tech-stack-1 img:hover, .app-tech-stack-2 img:hover, .app-tech-stack-3 img:hover {
+  transform: scale(1.2);
+}
+.app-tech-stack hr {
+  height: 6rem;
+}
+
+
+.aboutme {
+  margin-top: 4rem;
+  padding: 0 30rem;
+  font-size: larger;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .app-header h1 {
+    font-size: 3rem;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .app-header h1 {
+    margin-top: -10rem;
+    font-size: 2rem;
+  }
+  
+}
+@media screen and (max-width: 482px) {
+  .app-header h1 {
+    margin-top: -12rem;
+    font-size: 1.6rem;
+  }
+  .app-header p{
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .app-tech-stack-1 img, .app-tech-stack-2 img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app-tech-stack-1, .app-tech-stack-2 {
+    width: 90%;
+    height: 7rem;
+    padding: 0.5rem;
+    height: auto;
+  }
+  
+  .app-tech-stack-1 img, .app-tech-stack-2 img {
+    width: 70px;
+    margin: 5px;
+  }
+  
+  .app-tech-stack-1 hr, .app-tech-stack-2 hr {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app-tech-stack-1, .app-tech-stack-2 {
+    width: 20rem;
+  }
+  .app-tech-stack-1 img, .app-tech-stack-2 img {
+    width: 50px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+  .aboutme {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutme {
+    padding: 0 2rem;
+    /* margin-top: 2rem; */
+  }
+  .aboutme h2 {
+    font-size: 1rem;
+  }
+  .aboutme p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.about, .projects, .contact {
+  /* margin-top: 40px; */
+  margin-top: -20px;
+  
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  .about {
+    padding: 0 10rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0 2rem;
+    margin-top: -15rem;
+  }
+  .about h2 {
+    font-size: 1.2rem;
+  }
+  .about p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  color: white;
+
+}
+
+.projects h2 {
+  margin-top: 6rem;
+  margin-bottom: -1rem;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #97cbff41;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.project-title {
+  font-size: 2.6rem;
+  font-family: "Raleway", sans-serif; 
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+
+.project-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #282c34a4;
+  padding: 5rem;
+  border-radius: 1rem;
+  color: #000;
+}
+
+
+section {
+  margin-top: 10rem;
+  padding-top: 2rem;
+}
+
+section h2 {
+  margin-top: 20rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+  .app {
+    padding: 0 2rem;
+  }
+
+}
+@media screen and (max-width: 860px) {
+  .app {
+    padding: 0;
+  }
+  .project-list {
+    padding: 2rem;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.personal-projects{
+  background-image: linear-gradient(rgba(121, 255, 233, 0.753),rgba(98, 101, 255, 0.726));
+  border-radius: 1rem;
+}
+.work-projects{
+  background-image: linear-gradient(rgb(80, 80, 80),rgba(0, 0, 0, 0.726));
+  border-radius: 1rem;
+}
+.other-projects{
+  background-image: linear-gradient(rgb(121, 157, 255),rgba(0, 0, 0, 0.726));
+  border-radius: 1rem;
+}
+.tools{
+  background-image: linear-gradient(rgba(238, 39, 39, 0.76),rgba(0, 0, 0, 0.726));
+  border-radius: 1rem;
+}
+.mobileApps{
+  background-image: linear-gradient(rgb(133, 39, 125),rgba(0, 0, 0, 0.726));
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style.css */
+
+/* Contact section styles */
+.contact {
+  margin-top: 20rem;
+  text-align: center;
+  background-image: linear-gradient(black,rgba(29, 29, 29, 0.582));
+  border-radius: 1rem 1rem 0 0;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  margin-top: 1rem;
+  color: #ececec;
+}
+
+.contact p {
+  line-height: 1.6;
+  color: #e7e7e7; /* Adjust text color as needed */
+}
+
+.contact a {
+  color: #3498db; /* Adjust link color as needed */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+  color: #2c3e50; /* Adjust link color on hover as needed */
+}
+
+

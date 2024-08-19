@@ -1,0 +1,118 @@
+.navbar {
+
+    position: fixed;
+    /* overflow: hidden; */
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    backdrop-filter: blur(10px);
+}
+
+
+  
+  .nav-logo {
+      width: 100px;
+      height: 100px;
+  }
+  
+  .container {
+      height: 100%;
+      /* background-color: rgb(145, 204, 255); */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+  }
+  
+  /* .container {
+      
+  } */
+  
+  .navbar span {
+      color: white;
+  }
+  
+  .navbar .nav-menu {
+      display: flex;
+    }
+    
+  .navbar li {
+      padding: 1rem;
+      list-style: none;
+  }
+
+  .navbar a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+
+  }
+  .navbar a:hover {
+    color: #ff8d8d;
+  }
+  .navbar a:active {
+    color: #2c2c2c;
+  }
+  
+  .navbar .btn-container {
+      display: flex;
+      gap: 0.5rem;
+  }
+  
+  .sn-in:hover {
+      background-color: rgba(0, 68, 255, 0.637);
+  }
+  .sn-up:hover {
+      background-color: rgba(175, 18, 18, 0.808);
+  }
+  
+  .hamburger {
+      display: none;
+      color: aliceblue;
+      font-size: 2rem;
+      margin-top: 0.8rem;
+  }
+  
+  @media screen and (max-width:940px) {
+      .hamburger {
+          display: block;
+      }
+      .navbar {
+        justify-content: flex-start;
+        
+      }
+  
+      .navbar .nav-menu {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          font-size: 1.2rem;
+          top: 130px;
+          right: 100%;
+          height: 25rem;
+          width: 99.5%;
+          background-color: rgba(8, 8, 8, 0.829);
+          border-radius: 1rem;
+          transition: 0.4s ease-in-out;
+          z-index: 10;
+      }
+      
+      .navbar .active {
+          right: 60%;
+          /* left: 1px; */
+      }
+  
+  }
+
+  @media screen and (max-width: 487px) {
+    .navbar .active {
+        right: 40%;
+
+    }
+  }
